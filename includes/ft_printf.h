@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 11:47:44 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/20 14:26:14 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/20 14:29:10 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 
 typedef struct s_print
 {
-	va_list	args;
 	int		plus;
 	int		space;
 	int		zero;
@@ -31,7 +30,7 @@ typedef struct s_print
 	int		sharp;
 	int		width;
 	int		minus;
-}		t_print;
+}	t_print;
 
 int		ft_printf(const char *format);
 void	ft_output_char(t_print *tab, char c, int *a);
