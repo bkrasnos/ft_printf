@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 11:47:44 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/20 14:29:10 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/20 14:31:57 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ typedef struct s_print
 	int		minus;
 }	t_print;
 
-int		ft_printf(const char *format);
+int		ft_printf(const char *format, ...);
 void	ft_output_char(t_print *tab, char c, int *a);
 void	ft_output_hexadicimal_capital(t_print *tab, unsigned int nbr, int *a);
 void	ft_output_hexadicimal(t_print *tab, unsigned int nbr, int *a);
