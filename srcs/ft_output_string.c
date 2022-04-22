@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:34:47 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/22 13:42:59 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/22 15:12:05 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_output_string(t_print *tab, char *str, int *a)
 {
 	if (!str)
 	{
-		ft_output_string(tab, "NULL", a);
+		ft_output_string(tab, "(null)", a);
 		return ;
 	}
 	if (tab->dot >= 0 && tab->width && tab->width > tab->dot)
