@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:34:39 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/20 13:57:59 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/22 13:42:52 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	ft_putnbr_unsigned(unsigned long long nb, int *a)
 {
 	if (nb >= 16)
 	{
-		ft_putnbr_un(nb / 16, a);
+		ft_putnbr_unsigned(nb / 16, a);
 		nb = nb % 16;
 	}
 	if (nb < 10)

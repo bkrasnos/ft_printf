@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_output_hexadicimal_capital.c                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkrasnos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 13:34:24 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/20 13:34:25 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/22 13:42:16 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	ft_putnbr_unsigned(unsigned int nb, int *a)
 {
 	if (nb >= 16)
 	{
-		ft_putnbr_un(nb / 16, a);
+		ft_putnbr_unsigned(nb / 16, a);
 		nb = nb % 16;
 	}
 	if (nb < 10)

@@ -6,7 +6,7 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 11:47:23 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/20 13:34:53 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/22 13:43:18 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,14 +96,14 @@ static void	ft_output(va_list arg, t_print *tab, int *a)
 		ft_output_char(tab, '%', a);
 }
 
-int	ft_printf(const char *format)
+int	ft_printf(const char *format, ...)
 {
 	va_list	arg;
 	t_print	tab;
 	int		a;
 
 	va_start(arg, format);
-	r = 0;
+	a = 0;
 	while (*format)
 	{
 		if (*format == '%')

@@ -6,13 +6,13 @@
 /*   By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 11:47:17 by bkrasnos          #+#    #+#             */
-/*   Updated: 2022/04/20 13:37:50 by bkrasnos         ###   ########.fr       */
+/*   Updated: 2022/04/22 13:43:14 by bkrasnos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int	ft_putchar(char c, int *a)
+void	ft_putchar(char c, int *a)
 {
 	write(1, &c, 1);
 	++(*a);

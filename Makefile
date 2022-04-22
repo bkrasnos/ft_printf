@@ -3,25 +3,25 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: bkrasnos <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: bkrasnos <bkrasnos@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/20 11:47:34 by bkrasnos          #+#    #+#              #
-#    Updated: 2022/04/20 11:47:35 by bkrasnos         ###   ########.fr        #
+#    Updated: 2022/04/22 13:47:32 by bkrasnos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= libftprintf.a
 
-SRCS	= ft_printf.c \
-			ft_putchar.c \
-			ft_putstr.c \
-			ft_output_char.c \
-			ft_output_str.c \
-			ft_output_nbr.c \
-			ft_output_nbr_un.c \
-			ft_output_hex.c \
-			ft_output_hex_x.c \
-			ft_output_ptr.c \
+SRCS	= srcs/ft_printf.c \
+			srcs/ft_putchar.c \
+			srcs/ft_putstr.c \
+			srcs/ft_output_char.c \
+			srcs/ft_output_string.c \
+			srcs/ft_output_number.c \
+			srcs/ft_output_number_unsigned.c \
+			srcs/ft_output_hexadicimal.c \
+			srcs/ft_output_hexadicimal_capital.c \
+			srcs/ft_output_pointer.c \
 
 OBJS	= ${SRCS:.c=.o}
 
